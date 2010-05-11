@@ -37,6 +37,6 @@ To see more, take a look at:
 * [`foo/__init__.py`][2] - the code to inject these defaults.
 * [`foo/context_processors.py`][3] - the code that uses these new settings.
 
-[1]: foo/settings.py
-[2]: foo/__init__.py
-[3]: foo/context_processors.py
+[1]: http://github.com/thsutton/django-application-settings/tree/master/foo/settings.py
+[2]: http://github.com/thsutton/django-application-settings/tree/master/foo/__init__.py
+[3]: http://github.com/thsutton/django-application-settings/tree/master/foo/context_processors.py
