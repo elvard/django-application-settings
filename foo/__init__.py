@@ -4,7 +4,8 @@ def inject_app_defaults(application):
 	try:
 		__import__('%s.settings' % application)
 		import sys
-		# Import the 
+		
+		# Import our defaults, project defaults, and project settings
 		_app_settings = sys.modules['%s.settings' % application]
 		_def_settings = sys.modules['django.conf.global_settings']
 		_settings = sys.modules['django.conf'].settings
