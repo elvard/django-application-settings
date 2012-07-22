@@ -1,9 +1,2 @@
-# Mac OS X
-._*
-.DS_Store
-# Editors
-.*.swp
-*~
-# Python
+# Common
 *.pyc
-/test/

@@ -1,6 +1,6 @@
 import sys
 
-__version__ = '0.1a'
+__version__ = '0.1b'
 
 def provide_default_settings(application):
     """Inject an application's default settings into django.conf.settings.

@@ -1,7 +1,7 @@
 Default Settings for Django Applications
 ========================================
 
-*version*: 0.1 alpha
+*version*: 0.1 beta
 
 This repository [1]_ contains a proof of concept Django application that ships
 default values for its own settings. This is good for a number of reasons:
@@ -36,9 +36,18 @@ Instalation
 
 ::
 
+  pip install django-application-settings
+
+or latest:
+
+::
+
   git clone https://github.com/elvard/django-application-settings
   cd django-application-settings
-  sudo python setup.py install
+  python setup.py install
+
+Although this repository is so simple that between git repository and pip
+package will be delay few day at most (probably hours).
 
 Usage
 -----
