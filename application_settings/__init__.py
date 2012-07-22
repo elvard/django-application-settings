@@ -1,9 +1,11 @@
 import sys
 
-def provide_app_defaults(application):
+__version__ = '0.1a'
+
+def provide_default_settings(application):
     """Inject an application's default settings into django.conf.settings.
     
-    Add provide_app_default(__name__) to __init__.py in your application directory
+    Add provide_default_settings(__name__) to __init__.py in your application directory
     and create settings.py inside that directory.
     """
     settings_module = '{}.settings'.format(application)
@@ -12,8 +14,9 @@ def provide_app_defaults(application):
         __import__(settings_module)
     except ImportError:
         raise ImportError('Missing settings.py in you app directory. Either '
-                          'provide it or delete \'provide_app_defaults line '
-                          'from __init__.py.\'')
+                          'provide it or delete \'provide_default_settings line '
+                          'from __init__.py.\' (module {})'.format(
+                                                                settings_module))
     else:
         _app_settings = sys.modules[settings_module]
         _def_settings = sys.modules['django.conf.global_settings']
