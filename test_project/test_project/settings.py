@@ -7,6 +7,7 @@ DATABASES = {
     }
 }
 SECRET_KEY = '42'
-INSTALLED_APPS = ('testapp',)
+INSTALLED_APPS = ('testapp', 'autodiscoverapp')
 
 TEST_KEY_OVERRIDE = 'Better one!'
+TEST_AUTO_KEY_OVERRIDE = 'So long and thanks for all the fish!'

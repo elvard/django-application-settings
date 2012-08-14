@@ -1,7 +1,7 @@
 Default Settings for Django Applications
 ========================================
 
-*version*: 0.1 beta
+*version*: 0.2
 
 This repository [1]_ contains a proof of concept Django application that ships
 default values for its own settings. This is good for a number of reasons:
@@ -52,7 +52,12 @@ package will be delay few day at most (probably hours).
 Usage
 -----
 
-Add these lines to __init__.py inside your app::
+The simplest method is to use `autodiscover_settings` somewhere in `urls.py`::
+
+  autodiscover_settings()
+
+Or you can add these lines to __init__.py inside your app if you don't want to 
+load settings from other packages in `INSTALLED_APPS`::
   
   from application_settings import provide_default_settings
   provide_default_settings(__name__)

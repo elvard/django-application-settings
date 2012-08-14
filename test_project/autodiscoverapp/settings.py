@@ -1,0 +1,2 @@
+TEST_AUTO_KEY = 42
+TEST_AUTO_KEY_OVERRIDE = 'Oh no, not again!'

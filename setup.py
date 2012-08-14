@@ -13,11 +13,11 @@ setup(
     author='Tomáš Ehrlich',
     author_email='tomas.ehrlich@gmail.com',
     url='https://github.com/elvard/django-application-settings',
-    download_url='https://github.com/downloads/elvard/django-application-settings/django-application-settings-0.1b.tar.gz',
+    download_url='http://pypi.python.org/packages/source/d/django-application-settings/django-application-settings-0.2.tar.gz',
     packages=['application_settings'],
     license='GPL v3',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
